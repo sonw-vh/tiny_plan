@@ -44,6 +44,9 @@ dependencies:
   cloud_firestore: ^4.8.3
   geolocator: ^9.0.2
   google_nav_bar: ^5.0.6
+  firebase_core: ^2.15.0
+  firebase_messaging: ^14.6.5
+  google_maps_flutter: ^2.4.0
 
 dev_dependencies:
   flutter_test:

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:tiny_plan/app/landing_screen.dart';
 import 'package:tiny_plan/app/splash/splash_content.dart';
 import 'package:tiny_plan/widgets/size_config.dart';
-import 'package:tiny_plan/services/shared_preferences.dart';
+import 'package:tiny_plan/controllers/services/shared_preferences.dart';
 import 'package:tiny_plan/theme/theme.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -27,17 +27,17 @@ class _SplashScreenState extends State<SplashScreen> {
       'text': 'The perfect tool to control apps and monitor the time\n'
           'Your kids spend on screen. Easy to use ! \n'
           'Start by setting up your device then set up\n your kid\'s phone',
-      'image': 'images/png/11.png'
+      'image': ''
     },
     {
-      'text': 'Send notifications to your child when time  \n '
-          ' limit is reached or when\n he has to go to bed. ',
-      'image': 'images/png/12.png'
+      'text': '  \n '
+          ' \n . ',
+      'image': ''
     },
     {
       'text':
-          "Because we care, Let's live track their location \nand see on the map where your child is.",
-      'image': 'images/png/thumb.png'
+          ".",
+      'image': ''
     },
   ];
 
@@ -97,13 +97,9 @@ class _SplashScreenState extends State<SplashScreen> {
                                     CupertinoPageRoute(
                                         builder: (context) => LandingScreen()));
                               },
-                              child: Text(
-                                'Parent device'.toUpperCase(),
-                                style: TextStyle(
-                                  fontSize: getProportionateScreenWidth(10),
-                                  color: Colors.white,
-                                ),
-                              ),
+                              child: Image.asset(
+                                'assets/avatars/guildmaster.png'
+                              )
                             ),
                           ),
 
@@ -114,24 +110,20 @@ class _SplashScreenState extends State<SplashScreen> {
                               style: ButtonStyle(
                                   backgroundColor:
                                       MaterialStateProperty.all<Color>(
-                                          Theme.of(context).primaryColor)),
+                                          ThemeColor.shadow)),
                               onPressed: () {
                                 SharedPreference().setVisitingFlag();
                                 SharedPreference().setAdventurerDevice();
 
                                 print(
-                                    'The page is set to Child => now moving ......');
+                                    'The page is set to Adventurer => now moving ......');
                                 Navigator.of(context).pushReplacement(
                                     CupertinoPageRoute(
                                         builder: (context) => LandingScreen()));
                               },
-                              child: Text(
-                                ' Child device'.toUpperCase(),
-                                style: TextStyle(
-                                  fontSize: getProportionateScreenWidth(10),
-                                  color: Colors.white,
-                                ),
-                              ),
+                              child: Image.asset(
+                                'assets/avatars/adventurer.png'
+                              )
                             ),
                           ),
                         ],
@@ -164,8 +156,8 @@ class _SplashScreenState extends State<SplashScreen> {
       width: currentPage == index ? 20 : 6,
       decoration: BoxDecoration(
         color: currentPage == index
-            ? Theme.of(context).primaryColor
-            : Color(0xFFD8D8D8),
+            ? ThemeColor.leaf
+            : ThemeColor.sand,
         borderRadius: BorderRadius.circular(3),
       ),
     );

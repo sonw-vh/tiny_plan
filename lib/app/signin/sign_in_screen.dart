@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:tiny_plan/app/signin/sign_in_manager.dart';
-import 'package:tiny_plan/services/auth.dart';
+import 'package:tiny_plan/controllers/services/auth.dart';
 import 'package:tiny_plan/theme/theme.dart';
 import 'package:tiny_plan/widgets/custom_raised_button.dart';
 import 'package:tiny_plan/widgets/show_exeption_alert.dart';

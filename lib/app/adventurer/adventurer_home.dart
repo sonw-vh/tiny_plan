@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tiny_plan/services/auth.dart';
+import 'package:tiny_plan/controllers/services/auth.dart';
 
 class AdventurerHome extends StatefulWidget {
   const AdventurerHome({Key? key, this.auth}) : super(key: key);

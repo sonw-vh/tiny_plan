@@ -5,10 +5,10 @@ import 'package:showcaseview/showcaseview.dart';
 import 'package:tiny_plan/app/adventurer/adventurer_home.dart';
 import 'package:tiny_plan/app/guild_master/guildmaster_home.dart';
 import 'package:tiny_plan/app/signin/sign_in_screen.dart';
-import 'package:tiny_plan/services/auth.dart';
-import 'package:tiny_plan/services/database.dart';
-import 'package:tiny_plan/services/geo_locator_service.dart';
-import 'package:tiny_plan/services/shared_preferences.dart';
+import 'package:tiny_plan/controllers/services/auth.dart';
+import 'package:tiny_plan/controllers/services/database.dart';
+import 'package:tiny_plan/controllers/services/geo_locator_service.dart';
+import 'package:tiny_plan/controllers/services/shared_preferences.dart';
 
 class LandingScreen extends StatefulWidget {
   const LandingScreen({super.key});

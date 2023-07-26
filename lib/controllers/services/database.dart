@@ -1,6 +1,6 @@
-import 'package:tiny_plan/services/auth.dart';
-import 'package:tiny_plan/services/firestore_service.dart';
-import 'package:tiny_plan/services/geo_locator_service.dart';
+import 'package:tiny_plan/controllers/services/auth.dart';
+import 'package:tiny_plan/controllers/services/firestore_service.dart';
+import 'package:tiny_plan/controllers/services/geo_locator_service.dart';
 
 abstract class Database {
  

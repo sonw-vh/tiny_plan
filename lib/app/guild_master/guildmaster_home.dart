@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tiny_plan/services/auth.dart';
+import 'package:tiny_plan/controllers/services/auth.dart';
 
 class GuildMasterHome extends StatefulWidget {
   const GuildMasterHome({Key? key, this.auth}) : super(key: key);

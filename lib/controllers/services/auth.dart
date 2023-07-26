@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 abstract class AuthBase {
@@ -15,8 +16,9 @@ abstract class AuthBase {
   Future<User> signInWithGoogle();
 }
 
-abstract class Auth implements AuthBase {
+class Auth implements AuthBase {
   final _firebaseAuth = FirebaseAuth.instance;
+  final FirebaseMessaging _firebaseMessaging = FirebaseMessaging.instance;
   late String _token;
 
   String get token => _token;
@@ -65,6 +67,18 @@ abstract class Auth implements AuthBase {
         message: 'Sign in aborted by user',
       );
     }
+  }
+
+  Future<String> setToken() async {
+    try {
+      await _firebaseMessaging.getToken().then((token) {
+        _token = token!;
+        print('Device Token: $_token');
+      });
+    } catch (e) {
+      print(e);
+    }
+    return _token;
   }
 
   ///Sign Out Method from Firebase and Google

@@ -24,20 +24,16 @@ class _SplashScreenState extends State<SplashScreen> {
 
   List<Map<String, String>> splashData = [
     {
-      'text': 'The perfect tool to control apps and monitor the time\n'
-          'Your kids spend on screen. Easy to use ! \n'
-          'Start by setting up your device then set up\n your kid\'s phone',
-      'image': ''
+      'text': 'Vui tung tăng hớn hở, em làm kế hoạch nhỏ\n'
+          'Lượm giấy trồng cây chi đội ta có ngay \n'
+          'Giấy thu về đây ơi là bao bướm bay\n',
+      'image': 'assets/splash/splash1.png'
     },
     {
-      'text': '  \n '
-          ' \n . ',
-      'image': ''
-    },
-    {
-      'text':
-          ".",
-      'image': ''
+      'text': 'Như con ong chăm chỉ, như chim non vui vẻ\n'
+          'Em làm kế hoạch nhỏ\n'
+          'Bắt tay vào việc, em càng vui càng say \n',
+      'image': 'assets/splash/splash2.png'
     },
   ];
 
@@ -82,35 +78,13 @@ class _SplashScreenState extends State<SplashScreen> {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Container(
-                            height: 40,
+                            height: 100,
+                            padding: EdgeInsets.symmetric(vertical: 10),
                             child: ElevatedButton(
                               style: ButtonStyle(
                                   backgroundColor:
                                       MaterialStateProperty.all<Color>(
-                                          ThemeColor.shadow)),
-                              onPressed: () {
-                                SharedPreference().setVisitingFlag();
-                                SharedPreference().setGuildMasterDevice();
-                                print(
-                                    'The page is set to Guild Master => now moving ......');
-                                Navigator.of(context).pushReplacement(
-                                    CupertinoPageRoute(
-                                        builder: (context) => LandingScreen()));
-                              },
-                              child: Image.asset(
-                                'assets/avatars/guildmaster.png'
-                              )
-                            ),
-                          ),
-
-                          ///-------------------------------------------------------------------
-                          Container(
-                            height: 40,
-                            child: ElevatedButton(
-                              style: ButtonStyle(
-                                  backgroundColor:
-                                      MaterialStateProperty.all<Color>(
-                                          ThemeColor.shadow)),
+                                          ThemeColor.dust)),
                               onPressed: () {
                                 SharedPreference().setVisitingFlag();
                                 SharedPreference().setAdventurerDevice();
@@ -121,8 +95,68 @@ class _SplashScreenState extends State<SplashScreen> {
                                     CupertinoPageRoute(
                                         builder: (context) => LandingScreen()));
                               },
-                              child: Image.asset(
-                                'assets/avatars/adventurer.png'
+                              child: Column(
+                                children: [
+                                  SizedBox(height: 10,),
+                                  Container(
+                                    height: 45,
+                                    width: 45,
+                                    decoration: const BoxDecoration(
+                                      image: DecorationImage(fit: BoxFit.fitHeight, image: AssetImage('assets/avatars/adventurer.png')),
+                                    ),
+                                  ),
+                                  SizedBox(height: 10,),
+                                  Text(
+                                    'Adventurer',
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      color: ThemeColor.shadow,
+                                      fontWeight: FontWeight.w800,
+                                    ),
+                                  )
+                                ],
+                              )
+                            ),
+                          ),
+
+                          ///-------------------------------------------------------------------
+                          Container(
+                            height: 100,
+                            padding: EdgeInsets.symmetric(vertical: 10),
+                            child: ElevatedButton(
+                              style: ButtonStyle(
+                                  backgroundColor:
+                                      MaterialStateProperty.all<Color>(
+                                          ThemeColor.dust)),
+                              onPressed: () {
+                                SharedPreference().setVisitingFlag();
+                                SharedPreference().setGuildMasterDevice();
+                                print(
+                                    'The page is set to Guild Master => now moving ......');
+                                Navigator.of(context).pushReplacement(
+                                    CupertinoPageRoute(
+                                        builder: (context) => LandingScreen()));
+                              },
+                              child: Column(
+                                children: [
+                                  SizedBox(height: 10,),
+                                  Container(
+                                    height: 45,
+                                    width: 45,
+                                    decoration: const BoxDecoration(
+                                      image: DecorationImage(fit: BoxFit.fitHeight, image: AssetImage('assets/avatars/guildmaster.png')),
+                                    ),
+                                  ),
+                                  SizedBox(height: 10,),
+                                  Text(
+                                    'Guild Master',
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      color: ThemeColor.shadow,
+                                      fontWeight: FontWeight.w800,
+                                    ),
+                                  )
+                                ],
                               )
                             ),
                           ),

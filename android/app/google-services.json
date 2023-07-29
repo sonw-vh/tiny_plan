@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "673698221056",
+    "project_id": "tiny-plan-d3a11",
+    "storage_bucket": "tiny-plan-d3a11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673698221056:android:45d432ea9bef2d73a19ce5",
+        "android_client_info": {
+          "package_name": "com.example.tiny_plan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673698221056-lv1avjlqi1a79o8gqbafhtv3gvkoh93v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADJWVa81Oy0OiYjjcgs3ztahGW91un-mk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "673698221056-lv1avjlqi1a79o8gqbafhtv3gvkoh93v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

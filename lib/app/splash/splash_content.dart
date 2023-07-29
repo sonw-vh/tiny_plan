@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tiny_plan/widgets/size_config.dart';
+import 'package:tiny_plan/theme/theme.dart';
 
 class SplashContent extends StatelessWidget {
   const SplashContent({
@@ -26,15 +27,21 @@ class SplashContent extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Safe kid",
+                    "Tiny Plan",
                     style: TextStyle(
                       fontSize: getProportionateScreenWidth(25),
-                      color: Colors.indigo.shade400,
+                      color: ThemeColor.shadow,
                       fontWeight: FontWeight.w800,
                     ),
                   ),
-                  Image.asset('images/png/VNPT_Logo.png',
-                      width: 36, height: 36),
+                  Text(
+                    "@unihackervjppro",
+                    style: TextStyle(
+                      fontSize: getProportionateScreenWidth(20),
+                      color: ThemeColor.shadow,
+                      fontWeight: FontWeight.w800,
+                    ),
+                  ),
                 ],
               ),
               SizedBox(height: 8),
@@ -42,7 +49,7 @@ class SplashContent extends StatelessWidget {
                 text,
                 style: TextStyle(
                     color: Colors.black.withOpacity(0.35),
-                    fontSize: 11,
+                    fontSize: 13,
                     fontWeight: FontWeight.w500,
                     height: 1.5),
                 textAlign: TextAlign.left,

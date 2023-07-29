@@ -3,7 +3,6 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:tiny_plan/theme/theme.dart';
 
 class AdventurerBottomNavBar extends StatefulWidget {
-  const AdventurerBottomNavBar({super.key});
 
   @override
   State<AdventurerBottomNavBar> createState() => _AdventurerBottomNavBarState();

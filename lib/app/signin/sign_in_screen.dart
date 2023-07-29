@@ -89,14 +89,14 @@ class SignInPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Image.asset('images/google_logo.png'),
+                  Image.asset('images/google-logo.png'),
                   Text(
                     'Sign In with Google',
                     style: TextStyle(color: Colors.black, fontSize: 15),
                   ),
                   Opacity(
                     opacity: 0.0,
-                    child: Image.asset('images/google_logo.png'),
+                    child: Image.asset('images/google-logo.png'),
                   ),
                 ],
               )

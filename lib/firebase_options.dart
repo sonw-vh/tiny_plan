@@ -44,40 +44,40 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDzOwwvbtZteeBCKyJsKnfTzC4DCzp0FY8',
-    appId: '1:26954900915:web:b4fd1467b00e49354417c6',
-    messagingSenderId: '26954900915',
-    projectId: 'times-up-flutter-admin-8e432',
-    authDomain: 'times-up-flutter-admin-8e432.firebaseapp.com',
-    storageBucket: 'times-up-flutter-admin-8e432.appspot.com',
+    apiKey: 'AIzaSyC6MRX2ybc8qzPKuYd4sNVEW64DLnNA_Ig',
+    appId: '1:673698221056:web:b851ace945dffda1a19ce5',
+    messagingSenderId: '673698221056',
+    projectId: 'tiny-plan-d3a11',
+    authDomain: 'tiny-plan-d3a11.firebaseapp.com',
+    storageBucket: 'tiny-plan-d3a11.appspot.com',
     measurementId: 'G-PQ0F86HS33',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCJqwgFptVjPNS5Pn9z6LU2UnxCx7rZ7T0',
-    appId: '1:26954900915:android:b21e6b3f2a8d37974417c6',
-    messagingSenderId: '26954900915',
-    projectId: 'times-up-flutter-admin-8e432',
-    storageBucket: 'times-up-flutter-admin-8e432.appspot.com',
+    apiKey: 'AIzaSyADJWVa81Oy0OiYjjcgs3ztahGW91un-mk',
+    appId: '1:673698221056:android:45d432ea9bef2d73a19ce5',
+    messagingSenderId: '673698221056',
+    projectId: 'tiny-plan-d3a11',
+    storageBucket: 'tiny-plan-d3a11.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAHLpheeRPOrToDF-BJuEhfG_xUaWRE_5M',
-    appId: '1:26954900915:ios:460239cef5e7dfad4417c6',
-    messagingSenderId: '26954900915',
-    projectId: 'times-up-flutter-admin-8e432',
-    storageBucket: 'times-up-flutter-admin-8e432.appspot.com',
+    apiKey: 'AIzaSyAN6RocY-X27Ffn7GsSYzH0fStjJi89dmo',
+    appId: '1:673698221056:ios:5dc64e28c525c92aa19ce5',
+    messagingSenderId: '673698221056',
+    projectId: 'tiny-plan-d3a11',
+    storageBucket: 'tiny-plan-d3a11.appspot.com',
     iosClientId: '26954900915-0lqmv5qafbu040g3ce6mnimd2kv3upd4.apps.googleusercontent.com',
-    iosBundleId: 'com.example.parentalControl',
+    iosBundleId: 'com.example.tinyPlan',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAHLpheeRPOrToDF-BJuEhfG_xUaWRE_5M',
-    appId: '1:26954900915:ios:44bd6700a3af86d64417c6',
-    messagingSenderId: '26954900915',
-    projectId: 'times-up-flutter-admin-8e432',
-    storageBucket: 'times-up-flutter-admin-8e432.appspot.com',
-    iosClientId: '26954900915-b7bmb0lnc42bqpa59smuakngl6moiaqs.apps.googleusercontent.com',
-    iosBundleId: 'com.example.parentalControl.RunnerTests',
+    apiKey: 'AIzaSyAN6RocY-X27Ffn7GsSYzH0fStjJi89dmo',
+    appId: '1:673698221056:ios:5dc64e28c525c92aa19ce5',
+    messagingSenderId: '673698221056',
+    projectId: 'tiny-plan-d3a11',
+    storageBucket: 'tiny-plan-d3a11.appspot.com',
+    iosClientId: '673698221056-bgmg725en0ioa3f3q50pr060gs33h2m2.apps.googleusercontent.com',
+    iosBundleId: 'com.example.tinyPlan.RunnerTests',
   );
 }

@@ -11,7 +11,6 @@ import 'package:tiny_plan/controllers/services/geo_locator_service.dart';
 import 'package:tiny_plan/controllers/services/shared_preferences.dart';
 
 class LandingScreen extends StatefulWidget {
-  const LandingScreen({super.key});
 
   @override
   State<LandingScreen> createState() => _LandingScreenState();
